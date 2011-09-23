@@ -1,5 +1,5 @@
 
-html,body,div,form,fieldset,label,input,span,p,ul,li,img {
+html,body,div,form,fieldset,label,input,span,p,ul,li,img,a,strong,small {
 	margin:0;
 	padding:0;
 }
@@ -12,54 +12,70 @@ body {
 	text-align:center;
 }
 
-form.memory {
+a,a:link,a:active,a:visited,a:hover {
+	color:#15c;
+	text-decoration:none;
+}
+
+form#memory strong {
+	margin:0 0 2em 0;
+	display:block;
+	font-size:2em;
+	text-align:center;
+}
+
+form#memory {
 	width:400px;
 	text-align:left;
 	line-height:1.4em;
 }
 
-form.memory fieldset {
+form#memory fieldset {
 	border:none;
 }
 
-form.memory label {
+form#memory label {
 	display:block;
 	float:left;
 	margin:0 1em 0 0;
 }
 
-form.memory #iSlider {
+form#memory #iSlider {
 	margin:10px 0;
 }
 
-form.memory .buttons {
+form#memory .center {
 	text-align:center;
 }
 
-form.memory input[type=submit] {
+form#memory input[type=submit] {
 	background:#f8f8f8;
 	border:1px solid #ccc;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
 	border-radius:5px;
 	cursor:pointer;
-	margin:20px 0 0 0;
+	margin:20px 0 20px 0;
 	text-transform:uppercase;
 	padding:4px 6px;
 }
 
-form.memory input[type=submit]:hover,
-form.memory input[type=submit]:active,
-form.memory input[type=submit]:focus {
+form#memory small {
+	display:block;
+}
+
+form#memory input[type=submit]:hover,
+form#memory input[type=submit]:active,
+form#memory input[type=submit]:focus {
 	background:#fdf5ce;
 	border-color:#fbcb09;
 }
 
-form.memory input#c {
+form#memory input#c {
 	float:left;
 }
 
-div.memory {
+div#memory {
 	position:absolute;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -68,13 +84,13 @@ div.memory {
 	user-select: none;
 }
 
-div.memory ul {
+div#memory ul {
 	list-style-type:none;
 	line-height:0;
 	clear:both;
 }
 
-div.memory li {
+div#memory li {
 	border:1px solid #ccc;
 	float:left;
 	margin:5px;
@@ -84,32 +100,40 @@ div.memory li {
 	cursor:pointer;
 }
 
-div.memory li.solved {
+div#memory li.solved {
 	cursor:default;
 }
 
-div.memory li:hover {
+div#memory li:hover {
 	margin:6px 4px 4px 6px;
 	-webkit-box-shadow: 0px 0px 1px 0px #ccc;
 	-moz-box-shadow: 0px 0px 1px 0px #ccc;
 	box-shadow: 0px 0px 1px 0px #ccc;
 }
 
-div.memory div {
+div#memory div {
 	background:#f8f8f8 url('bg-memory.png');
 	border:3px solid #fff;
 	width:90px;
 	height:90px;
 }
 
-div.memory img {
+div#memory img {
 	display:none;
 }
 
-div.memory p {
+div#memory p {
 	float:left;
 	width:33%;
 	margin:10px 0;
+}
+
+div#solved strong {
+	font-size:3em;
+}
+
+div#solved p {
+	margin:1em 0;
 }
 
 br.clear {
