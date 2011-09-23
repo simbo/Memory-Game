@@ -92,8 +92,8 @@ $(document).ready(function(){
 					}
 					// minutes
 					if( d>60 ) {
-						t += Math.floor(d/600)+'m ';
-						d = d%600;
+						t += Math.floor(d/60)+'m ';
+						d = d%60;
 					}
 					// seconds
 					t += d+'s';
