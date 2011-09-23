@@ -36,10 +36,10 @@
 <?php
 	if( !empty($images) ) {
 		echo '<div class="memory">';
-		for( $c=0; $c<$cols; $c++ ) {
+		for( $r=0; $r<$rows; $r++ ) {
 			echo '<ul>';
-			for( $r=0; $r<$rows; $r++ ) {
-				$i = $c*$rows+$r;
+			for( $c=0; $c<$cols; $c++ ) {
+				$i = $r*$rows+$c;
 				if( isset($images[$i]) )
 					echo '<li><div><img src="images/'.$images[$i].'.png"/></div></li>';
 			}
